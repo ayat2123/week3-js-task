@@ -33,4 +33,18 @@ function countProperties(obj) {
     return count;
   }
   
+  //countdown
+  function startcountdown(second){
+    const counter=second
+    setInterval(()=>{
+    counter--;
+    console.log(counter)
+  })
+   if(counter===0){
+        clearInterval(counterinterval)
+    }
+  }
+  startcountdown(10)
+ 
+  
  
